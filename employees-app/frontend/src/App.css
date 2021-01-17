@@ -11,3 +11,37 @@
 .margin-top{
     margin-top: 40px;
 }
+
+.toast-container-alert{
+    background-color: #db3737;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    transition: .5s ease-in;
+    top: 0;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.17);
+    z-index: 99999;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: flex!important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+}
+
+.toast-container-alert .content{
+    position: relative;
+    display: inline-block;
+}
+
+.cancel-alert:hover{
+    cursor: pointer !important;
+}
