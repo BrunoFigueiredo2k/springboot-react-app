@@ -35,7 +35,7 @@ public class EmployeeController {
     @GetMapping("/employees/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable Long id){
         Employee employee = employeeRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Employee doesn't exist with id: " + id));
+                    .orElseThrow(() -> new ResourceNotFoundException("Employee doesn't exist with id: " + id));
         return ResponseEntity.ok(employee);
     }
 
